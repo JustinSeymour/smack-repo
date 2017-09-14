@@ -8,8 +8,20 @@
 
 import Foundation
 
-//Segues
+typealias CompletionHandler = (_ Success: Bool) -> ()
 
+// URL constants
+let BASE_URL = "https://chattyjust.herokuapp.com/v1"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
+//Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
+
+//User Defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "LoggedIn"
+let USER_EMAIL = "userEmail"
+
+
