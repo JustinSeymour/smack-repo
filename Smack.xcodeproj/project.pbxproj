@@ -26,6 +26,7 @@
 		74D591021F6BC25700F132AF /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D591011F6BC25700F132AF /* UserDataService.swift */; };
 		74D591041F6BCD2000F132AF /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D591031F6BCD2000F132AF /* AvatarPickerVC.swift */; };
 		74D591061F6BCEDA00F132AF /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D591051F6BCEDA00F132AF /* AvatarCell.swift */; };
+		74D591081F6BE79800F132AF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D591071F6BE79800F132AF /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		74D591011F6BC25700F132AF /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		74D591031F6BCD2000F132AF /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		74D591051F6BCEDA00F132AF /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		74D591071F6BE79800F132AF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				743D98C51F69328100093F71 /* GradientView.swift */,
 				74D2F3BB1F6AA46A006C8E8E /* RoundedButton.swift */,
 				74D591051F6BCEDA00F132AF /* AvatarCell.swift */,
+				74D591071F6BE79800F132AF /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				741ECFAA1F69154800FB733D /* ChatVC.swift in Sources */,
+				74D591081F6BE79800F132AF /* CircleImage.swift in Sources */,
 				74D591021F6BC25700F132AF /* UserDataService.swift in Sources */,
 				743D98A41F6922D800093F71 /* Smack-Bridging-Header.h in Sources */,
 				743D98C31F69244700093F71 /* SWRevealViewController.m in Sources */,
