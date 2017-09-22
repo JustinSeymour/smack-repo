@@ -49,4 +49,6 @@ class SocketService: NSObject {
         socket.emit("newMessage", messageBody, userId, channelId, user.name, user.avatarName, user.avatarColor)
         completion(true)
     }
+    
+    
 }
