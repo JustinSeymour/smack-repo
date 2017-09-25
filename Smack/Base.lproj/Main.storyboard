@@ -84,6 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7e-Ij-f4f">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
                                 <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="rEF-jN-XR8" eventType="editingChanged" id="oZF-mc-JMO"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f5t-Fv-ieY">
                                 <rect key="frame" x="0.0" y="77" width="375" height="520"/>
@@ -144,11 +147,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1v-a2-VVa">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GTT-xj-CL8" firstAttribute="leading" secondItem="vfP-dR-h6d" secondAttribute="leading" id="5tl-dJ-fgX"/>
                             <constraint firstItem="X7e-Ij-f4f" firstAttribute="centerY" secondItem="GTT-xj-CL8" secondAttribute="centerY" id="Con-e3-cxg"/>
+                            <constraint firstItem="j1v-a2-VVa" firstAttribute="leading" secondItem="vfP-dR-h6d" secondAttribute="leading" constant="8" id="GK5-mN-Hv1"/>
                             <constraint firstItem="pSg-NZ-dAX" firstAttribute="trailing" secondItem="vfP-dR-h6d" secondAttribute="trailing" id="OAv-E9-YzG"/>
                             <constraint firstItem="vfP-dR-h6d" firstAttribute="bottom" secondItem="GTT-xj-CL8" secondAttribute="bottom" id="U1W-Ww-BON"/>
                             <constraint firstItem="f5t-Fv-ieY" firstAttribute="top" secondItem="pSg-NZ-dAX" secondAttribute="bottom" id="UcM-PD-t05"/>
@@ -158,6 +168,7 @@
                             <constraint firstItem="GTT-xj-CL8" firstAttribute="top" secondItem="f5t-Fv-ieY" secondAttribute="bottom" constant="30" id="d0i-Ph-tmB"/>
                             <constraint firstItem="vfP-dR-h6d" firstAttribute="trailing" secondItem="f5t-Fv-ieY" secondAttribute="trailing" id="dCb-UJ-Pfq"/>
                             <constraint firstItem="pSg-NZ-dAX" firstAttribute="top" secondItem="Inb-5A-g6g" secondAttribute="top" id="gkt-Ec-6CZ"/>
+                            <constraint firstItem="GTT-xj-CL8" firstAttribute="top" secondItem="j1v-a2-VVa" secondAttribute="bottom" constant="6" id="sLL-Ny-00Z"/>
                             <constraint firstItem="f5t-Fv-ieY" firstAttribute="leading" secondItem="vfP-dR-h6d" secondAttribute="leading" id="wGB-fz-IH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vfP-dR-h6d"/>
@@ -166,7 +177,9 @@
                         <outlet property="channelNameLabel" destination="ch9-3D-zWy" id="2ds-sN-qwH"/>
                         <outlet property="menuBtn" destination="XE9-wh-QhK" id="gnp-U0-Ds9"/>
                         <outlet property="messageTxtBox" destination="GTT-xj-CL8" id="Wkq-nQ-n17"/>
-                        <outlet property="tableView" destination="f5t-Fv-ieY" id="Kbp-Ma-8VA"/>
+                        <outlet property="sendBtn" destination="X7e-Ij-f4f" id="Bgl-EW-yz2"/>
+                        <outlet property="tableView" destination="f5t-Fv-ieY" id="Ox5-wi-7Hm"/>
+                        <outlet property="typingUsersLbl" destination="j1v-a2-VVa" id="C19-EC-naK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKX-7M-JbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
